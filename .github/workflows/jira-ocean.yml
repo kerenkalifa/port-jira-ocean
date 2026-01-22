@@ -17,6 +17,6 @@ jobs:
           port_client_secret: ${{ secrets.PORT_CLIENT_SECRET }}
           port_base_url: "https://api.port.io"
           config: |
-            jira_host: "kerenkalifa.atlassian.net"
+            jira_host: ${{ secrets.JIRA_HOST }}
             atlassian_user_email: ${{ secrets.ATLASSIANUSEREMAIL }}
             atlassian_user_token: ${{ secrets.ATLASSIAN_USER_TOKEN }}
