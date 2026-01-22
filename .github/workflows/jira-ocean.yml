@@ -13,10 +13,10 @@ jobs:
         uses: port-labs/ocean-sail@v1
         with:
           type: jira
-          port_client_id: ${{ secrets.PORT_CLIENT_ID }}
-          port_client_secret: ${{ secrets.PORT_CLIENT_SECRET }}
+          PORT_CLIENT_ID: ${{ secrets.PORT_CLIENT_ID }}
+          PORT_CLIENT_SECRET: ${{ secrets.PORT_CLIENT_SECRET }}
           port_base_url: "https://api.port.io"
           config: |
-            jira_host: ${{ secrets.JIRA_HOST }}
-            atlassian_user_email: ${{ secrets.atlassianUserEmail }}
-            atlassian_user_token: ${{ secrets.atlassianUserToken }}
+            JIRA_HOST: ${{ secrets.JIRA_HOST }}
+            ATLASSIANUSEREMAIL: ${{ secrets.atlassianUserEmail }}
+            ATLASSIANUSERTOKEN: ${{ secrets.atlassianUserToken }}
